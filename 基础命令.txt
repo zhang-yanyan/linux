@@ -3,7 +3,8 @@
 3、显示日期命令：date
 	以“2016/10/19”格式显示：date +%Y/%m/%d
 	以“12：00”格式显示：date +%H:%M
-	以“2016/10/19 12：00”格式显示：?
+	以“2016/10/19-12：00”格式显示：date +%Y/%m/%d-%H:%M
+
 4、日历命令：cal [month] [year]
 	默认情况下cal显示的是当前月份的日历，如：cal结果如下：
 	    October 2016
@@ -51,5 +52,16 @@ Su Mo Tu We Th Fr Sa
 	shutdown -r now 立即重启
 	shutdown -r +30 ‘the system will reboot’ 30分钟后重启,并显示后面的讯息给所有在线使用者
 	shutdown -k now ‘this system will reboot’ 仅发出系统立即重启的警告，并不会真的重启
-
+10.reboot/halt/poweroff
+11.权限：chgrp/chmod/chown
+chgrp 组名 文件名
+chown 用户名 文件名
+rwx对应的权限值：
+	r:4
+	w:2
+	x:1
+chmod 755 finename //更改finename档案的权限为-rwxr-xr-x
+chmod u=rwx,go=rx filename //给用户赋予rex的权限，给用户组和其他组赋予读和执行的权限
+chmod a+x filename //给所有人增加可执行的权限
+chmod a-w filename //给所有人去掉写的权限
 	
