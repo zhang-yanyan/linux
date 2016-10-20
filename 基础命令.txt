@@ -43,5 +43,13 @@ Su Mo Tu We Th Fr Sa
 7.2.1.info page 与man page类似
 7.2.2.按下【tab】可使光标在node之间移动，有node的地方通常以“*”开头；
 	按下【enter】：当光标在node上时，按下enter键可进入该node查看详情；
+8.1 同步命令：sync:将更改的内容写入硬盘；
+9. shutdown命令：
+	shutdown -h now 立即关机
+	shutdown -h +10 10分钟后立即关机
+	shutdown -h 20:15 系统在今晚的20：15关机，若在21：10后才下达该指令，则隔天才关机
+	shutdown -r now 立即重启
+	shutdown -r +30 ‘the system will reboot’ 30分钟后重启,并显示后面的讯息给所有在线使用者
+	shutdown -k now ‘this system will reboot’ 仅发出系统立即重启的警告，并不会真的重启
 
 	
