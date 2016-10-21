@@ -64,6 +64,7 @@ chmod 755 finename //更改finename档案的权限为-rwxr-xr-x
 chmod u=rwx,go=rx filename //给用户赋予rex的权限，给用户组和其他组赋予读和执行的权限
 chmod a+x filename //给所有人增加可执行的权限
 chmod a-w filename //给所有人去掉写的权限
+注：要开放目录给任何人浏览时，应该至少也要给予 r 及 x 的权限，但 w 权限不可随便给；
 12.linux档案种类：
 12.1.正规文档regular file：纯文本文本txt、二进制文档、数据文档.data；
 12.2.目录文档：第一个属性为d，如：drwxr-xr-x 
@@ -71,3 +72,10 @@ chmod a-w filename //给所有人去掉写的权限
 12.4.设备与装置文件device:其中又分为2种，区块设备文档(第一个属性为b)和字符设备文档(第一个属性为c)
 12.5.资料接口文件sockets:第一个属性为s;
 12.6.数据输送文件FIFO,pipe:第一个属性为p
+13.相对路径与绝对路径：
+.代表当前目录，也可以用./表示；
+..代表上一层目录，也可以用../表示；
+14、FHS的规定中，三层主目录结果为：/、/var、/usr
+	有5个目录不可与根目录放在不同的partition,分别是/bin、/etc、/lib、/dev、/sbin
+
+
