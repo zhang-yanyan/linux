@@ -77,5 +77,15 @@ chmod a-w filename //给所有人去掉写的权限
 ..代表上一层目录，也可以用../表示；
 14、FHS的规定中，三层主目录结果为：/、/var、/usr
 	有5个目录不可与根目录放在不同的partition,分别是/bin、/etc、/lib、/dev、/sbin
+15.常用指令
+	cd 
+	pwd
+	mkdir
+	rmdir
+	ls
+	cp
+	rm
+	mv
 
+	
 
