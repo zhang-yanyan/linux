@@ -64,4 +64,10 @@ chmod 755 finename //更改finename档案的权限为-rwxr-xr-x
 chmod u=rwx,go=rx filename //给用户赋予rex的权限，给用户组和其他组赋予读和执行的权限
 chmod a+x filename //给所有人增加可执行的权限
 chmod a-w filename //给所有人去掉写的权限
-	
+12.linux档案种类：
+12.1.正规文档regular file：纯文本文本txt、二进制文档、数据文档.data；
+12.2.目录文档：第一个属性为d，如：drwxr-xr-x 
+12.3.连接文档：第一个属性为l，如：lrwxrwxrwx
+12.4.设备与装置文件device:其中又分为2种，区块设备文档(第一个属性为b)和字符设备文档(第一个属性为c)
+12.5.资料接口文件sockets:第一个属性为s;
+12.6.数据输送文件FIFO,pipe:第一个属性为p
