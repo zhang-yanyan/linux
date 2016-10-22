@@ -99,6 +99,20 @@ cp sshkeys sshkeys.pub test
 19.basename:获取文件名，如：basename /etc/syslog.conf —>syslog.conf
 
    dirname:获取目录名，如：dirname /etc/syslog.conf —> /etc
+20.	cat
+	tac
+	more
+	less
+	head
+	tail
+	非纯文本文件内容的读取：od -t type file,如：od -t c /usr/bin/passwd
+21.时间：
+	mtime:内容被修改的时候的时间；
+	ctime:状态被修改的时候的时间，比如权限、属性被修改；
+	atime:文件内容被取用时候的时间，如cat、more文件内容；
+	ls -l /etc/man.conf ：默认显示的是mtime，
+	ls -l —time=atime /etc/man.conf :显示的时间是atime
+	ls -l —time=ctime /etc/man.conf :显示的时间是ctime
 
 
 	
