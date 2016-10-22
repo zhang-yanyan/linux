@@ -94,6 +94,12 @@ cp sshkeys sshkeys.pub test
 4.-a:将文件的所有属性都复制过来；
 5.若要复制目录，则需要加上-r才可以将目录及目录下的内容复制过来；
 6.-u:复制差异部分到目标文件；
+17.mv
+18.rm
+19.basename:获取文件名，如：basename /etc/syslog.conf —>syslog.conf
+
+   dirname:获取目录名，如：dirname /etc/syslog.conf —> /etc
+
 
 	
 
