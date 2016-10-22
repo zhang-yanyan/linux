@@ -113,6 +113,12 @@ cp sshkeys sshkeys.pub test
 	ls -l /etc/man.conf ：默认显示的是mtime，
 	ls -l —time=atime /etc/man.conf :显示的时间是atime
 	ls -l —time=ctime /etc/man.conf :显示的时间是ctime
+21.连续指令的下达用分号分隔
+22.常用压缩/解压缩命令：
+压缩：gzip -v 要压缩的文件
+读取纯文本文件被压缩后的压缩文件内容：zcat 纯文本文件被压缩后的压缩文件
+解压缩：gzip -d 要解压缩的压缩文件；
+
 
 
 	
