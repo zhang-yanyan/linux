@@ -86,6 +86,14 @@ chmod a-w filename //给所有人去掉写的权限
 	cp
 	rm
 	mv
+16.cp:
+1.可一次复制多个内容到目标文件(目录），如将sshkeys和sshkeys.pub复制到test目录下：
+cp sshkeys sshkeys.pub test
+2.-i：复制前询问是否确定，可通过n/y执行
+3.复制到当前目录，则目标文件为.：cp ~/test .
+4.-a:将文件的所有属性都复制过来；
+5.若要复制目录，则需要加上-r才可以将目录及目录下的内容复制过来；
+6.-u:复制差异部分到目标文件；
 
 	
 
